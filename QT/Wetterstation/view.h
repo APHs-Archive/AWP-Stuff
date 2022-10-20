@@ -2,15 +2,16 @@
 #define VIEW_H
 
 #include <QWidget>
-#include <QPushButton>
+#include <QLabel>
 
 class View : public QWidget
 {
     Q_OBJECT
 public:
     explicit View(QWidget *parent = nullptr);
-private:
 
+private:
+    QLabel *label1;
 signals:
 
 };
