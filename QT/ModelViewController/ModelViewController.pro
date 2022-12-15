@@ -9,18 +9,12 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
-    feuchtesensor.cpp \
-    idatagate.cpp \
     main.cpp \
     model.cpp \
-    temperatursensor.cpp \
     view.cpp
 
 HEADERS += \
-    feuchtesensor.h \
-    idatagate.h \
     model.h \
-    temperatursensor.h \
     view.h
 
 FORMS += \
@@ -30,3 +24,9 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    assets/Ampel_1.png \
+    assets/Ampel_2.png \
+    assets/Ampel_3.png \
+    assets/Ampel_4.png

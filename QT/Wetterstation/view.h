@@ -1,19 +1,22 @@
 #ifndef VIEW_H
 #define VIEW_H
 
-#include <QWidget>
-#include <QLabel>
+#include <QMainWindow>
 
-class View : public QWidget
+namespace Ui {
+class View;
+}
+
+class View : public QMainWindow
 {
     Q_OBJECT
+
 public:
     explicit View(QWidget *parent = nullptr);
+    ~View();
 
 private:
-    QLabel *label1;
-signals:
-
+    Ui::View *ui;
 };
 
 #endif // VIEW_H

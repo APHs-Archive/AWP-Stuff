@@ -1,15 +1,13 @@
+#include "view.h"
+#include "model.h"
 
 #include <QApplication>
-#include <feuchtesensor.h>
-#include <view.h>
-#include <model.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-
-    View v;
-    v.show();
-
+    View *view = new View();
+    new Model(view);
+    view->show();
     return a.exec();
 }

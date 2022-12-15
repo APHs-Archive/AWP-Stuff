@@ -1,10 +1,14 @@
 #include "view.h"
+#include "ui_view.h"
 
-View::View(QWidget *parent) : QWidget{parent} {
+View::View(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::View)
+{
+    ui->setupUi(this);
+}
 
-    this->resize(200,200);
-
-    label1 = new QLabel(this);
-
-    label1->setText("🍏🍐🍊");
+View::~View()
+{
+    delete ui;
 }
