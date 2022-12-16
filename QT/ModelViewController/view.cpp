@@ -11,11 +11,13 @@ View::View(QWidget* parent) : QWidget(parent), ui(new Ui::View) {
     this->setFixedSize(QSize(500, 500));
 
     // Initalizing Images
-    stopLightRed = new QPixmap("/Users/jonas/Documents/GitHub/AWP/OOP/QT/ModelViewController/assets/Ampel_1.png");
-    stopLightOrangeRed = new QPixmap("/Users/jonas/Documents/GitHub/AWP/OOP/QT/ModelViewController/assets/Ampel_2.png");
-    stopLightOrange = new QPixmap("/Users/jonas/Documents/GitHub/AWP/OOP/QT/ModelViewController/assets/Ampel_3.png");
-    stopLightGreen = new QPixmap("/Users/jonas/Documents/GitHub/AWP/OOP/QT/ModelViewController/assets/Ampel_4.png");
-    background = new QPixmap("/Users/jonas/Documents/GitHub/AWP/OOP/QT/ModelViewController/assets/background.jpg");
+    QString path = "/Users/jonas/Documents/GitHub/AWP-Stuff/QT/ModelViewController/assets/";
+
+    stopLightRed = new QPixmap(path + "Ampel_1.png");
+    stopLightOrangeRed = new QPixmap(path + "Ampel_2.png");
+    stopLightOrange = new QPixmap(path + "Ampel_3.png");
+    stopLightGreen = new QPixmap(path + "Ampel_4.png");
+    background = new QPixmap(path + "background.jpg");
 
     ui->imgBackground->setPixmap(*background);
 }
