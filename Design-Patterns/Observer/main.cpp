@@ -1,5 +1,5 @@
-#include "Observer/Observer.h"
-#include "Observer/Subject.h"
+#include "Observer.h"
+#include "Subject.h"
 
 int main() {
     Subject *subject = new Subject;
