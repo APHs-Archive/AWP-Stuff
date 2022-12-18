@@ -1,10 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 
-#set clang as compiler
-set(CMAKE_C_COMPILER "C:/Program Files/LLVM/bin/clang.exe")
-set(CMAKE_CXX_COMPILER "C:/Program Files/LLVM/bin/clang.exe")
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17 -stdlib=libc++")
-
 project(pattern_observer)
 
 #set c++ standard

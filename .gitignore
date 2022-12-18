@@ -1,3 +1,2 @@
 /QT/build-*
-
-build\*
+*/*/build/*
