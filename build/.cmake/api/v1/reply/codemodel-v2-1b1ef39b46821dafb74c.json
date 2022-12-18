@@ -1,0 +1,113 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "Observer",
+					"jsonFile" : "directory-Observer-Debug-42c414ac6b9ae32e90cd.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Observer",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Subject",
+					"jsonFile" : "directory-Subject-Debug-7df536d62c8789c3d12f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Subject",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "pattern_observer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "Observer::@c6a355d0f466c6ef10f8",
+					"jsonFile" : "target-Observer-Debug-22b65d2c3bb16f95ec1c.json",
+					"name" : "Observer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "Subject::@3235eab333e03bd3c2f0",
+					"jsonFile" : "target-Subject-Debug-1ee3ddef3fd584a4bfe1.json",
+					"name" : "Subject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pattern_observer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pattern_observer-Debug-acddd92719736573be56.json",
+					"name" : "pattern_observer",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/jonas/Documents/GitHub/AWP-Stuff/build",
+		"source" : "/Users/jonas/Documents/GitHub/AWP-Stuff/Design-Patterns/Observer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libSubject.a CMakeFiles/Subject.dir/Subject.cpp.o
+/usr/bin/ranlib libSubject.a

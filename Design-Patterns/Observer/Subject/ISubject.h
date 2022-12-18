@@ -1,8 +1,7 @@
 #pragma once
 
-#include "IObserver.h"
+#include "../Observer/IObserver.h"
 
-#include <vector>
 #include <string>
 #include <iostream>
 

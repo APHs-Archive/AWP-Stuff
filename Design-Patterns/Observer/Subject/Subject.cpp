@@ -1,26 +1,32 @@
 #include "Subject.h"
 
+Subject::~Subject() {
+  std::cout << "🔴 [Debug] Subject destroyed." << std::endl;
+}
+
 void Subject::subscribe(IObserver *observer) {
   m_observers.push_back(observer);
 }
 
 void Subject::unsubscribe(IObserver *observer) {
-  m_observers.erase(std::remove(m_observers.begin(), m_observers.end(), observer), m_observers.end());
+  m_observers.remove(observer);
 }
 
 void Subject::notify() {
-  /*
-  for (IObserver *observer : m_observers) {
-    observer->Update("m_message");
-  }
-  */
-}
+  std::list<IObserver *>::iterator iterator = m_observers.begin();
+  //printInfo();
 
-void Subject::printInfo() {
-    std::cout << m_observers.size() << std::endl;
+  while (iterator != m_observers.end()) {
+    (*iterator)->Update(m_message);
+    ++iterator;
+  }
 }
 
 void Subject::createMessage(std::string message) {
   m_message = message;
   notify();
+}
+
+void Subject::printInfo() {
+    std::cout << "Current Observers: " << m_observers.size() << std::endl;
 }
