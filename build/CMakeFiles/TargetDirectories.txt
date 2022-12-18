@@ -1,9 +1,0 @@
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/CMakeFiles/pattern_observer.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/CMakeFiles/edit_cache.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/CMakeFiles/rebuild_cache.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Observer/CMakeFiles/Observer.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Observer/CMakeFiles/edit_cache.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Observer/CMakeFiles/rebuild_cache.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Subject/CMakeFiles/Subject.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Subject/CMakeFiles/edit_cache.dir
-/Users/jonas/Documents/GitHub/AWP-Stuff/build/Subject/CMakeFiles/rebuild_cache.dir
