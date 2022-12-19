@@ -13,13 +13,13 @@ int main() {
     Observer* observer2 = new Observer(*subject);
     Observer* observer3 = new Observer(*subject);
 
-    subject->createMessage("Hello World: 1");
+    subject->createEvent("Hello World: 1");
     observer3->Detach();
 
-    subject->createMessage("Hello World: 2");
+    subject->createEvent("Hello World: 2");
     observer2->Detach();
 
-    subject->createMessage("Hello World: 3");
+    subject->createEvent("Hello World: 3");
     observer1->Detach();
 
     delete observer3;

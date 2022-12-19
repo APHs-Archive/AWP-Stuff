@@ -10,7 +10,7 @@ class Subject : public ISubject {
         void subscribe(IObserver *observer) override;
         void unsubscribe(IObserver *observer) override;
         void notify() override ;
-        void createMessage(std::string message = "Empty");
+        void createEvent(std::string message = "Empty");
         void printInfo();
         void foobar();
     private: 

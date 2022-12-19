@@ -22,7 +22,7 @@ void Subject::notify() {
   }
 }
 
-void Subject::createMessage(std::string message) {
+void Subject::createEvent(std::string message) {
   m_message = message;
   notify();
 }
